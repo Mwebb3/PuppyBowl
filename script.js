@@ -1,4 +1,5 @@
 const playerList = document.querySelector("#playerList");
+const info = document.querySelector("#info");
 
 let playerNames;
 
@@ -15,11 +16,38 @@ function render(){
     const html = playerNames.map((player) => {
         return `
             <a href="#${player.id !== hash ? player.id : ""}" class=${player.id === hash ? "selected": ""}>
-                    ${player.name}: ${player.breed}
+                <div class="name">${player.name}</div> 
+                <br/>
+                <div class="breed">Breed(s):${player.breed}</div>
             </a>
         `
     })
-    playerList.innerHTML = html.join("")
+    playerList.innerHTML = html.join("");
+
+    const player = playerNames.find((player) => {
+        return player.id === hash
+    })
+
+    let infoHtml = "Click on a Player to See More Info"
+    if(player){
+        infoHtml = `
+            <div class="background" style="background-image:url(${player.imageUrl})">
+                <div id="details">
+                    <h2>Meet ${player.name}!</h2>
+                    <ul>
+                        <li>Breed(s): ${player.breed}</li>
+                        <li>Status: ${player.status}</li>
+                    </ul>
+                </div>
+                <div id="home">
+                    <a href="#${player.id !== hash ? "": ""}">Back to Home</a>
+                </div>
+            </div>
+        `
+    }
+    info.innerHTML = infoHtml
+
+
 }
 
 window.addEventListener("hashchange", () => {

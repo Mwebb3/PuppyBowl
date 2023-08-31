@@ -2,20 +2,80 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #795CB2;
+}
+
+h1 {
+    background-color: #408EC6;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    border: 2px ridge white;
+    color: #795CB2;
+    font-size: 4rem;
+    text-shadow: 1px 1px black;
+}
+
 .selected {
-    color:white;
+    color: white;
 }
 
 nav {
-    background-color: cornflowerblue;
-    padding: 1rem;
+    background-color: #408EC6;
     display: flex;
-    justify-content: space-evenly;
+    padding: 5px;
 }
 
 nav a {
-    padding: 1rem;
+    padding: 6px;
     border: 1px solid black;
+}
+
+.name {
+    font-size: x-large;
+    text-align: center;
+}
+
+.breed {
+    text-align: center;
+    color: black;
+}
+
+.background {
+    height: 100vh;
+    width: 100vh;
+    background-size: cover;
+    color: white;
+    text-align:center;
+    text-shadow: 1px 1px black;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #408EC6;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+    text-decoration: underline;
+    line-height: 0;
+}
+
+ul {
+    font-size: 2.5rem;
+    line-height: 1;
+    list-style: none;
+}
+
+#home {
+    margin-top: 78%;
+    background-color: #408EC6;
+    border-radius: 2rem;
 }
 
 @media (max-width: 500px) {

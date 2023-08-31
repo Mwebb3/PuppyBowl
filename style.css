@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+.selected {
+    color:white;
+}
+
+nav {
+    background-color: cornflowerblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+}

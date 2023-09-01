@@ -31,6 +31,7 @@ function render(){
     let infoHtml = "Click on a Player to See More Info"
     if(player){
         infoHtml = `
+            
             <div class="background" style="background-image:url(${player.imageUrl})">
                 <div id="details">
                     <h2>Meet ${player.name}!</h2>
@@ -40,9 +41,10 @@ function render(){
                     </ul>
                 </div>
                 <div id="home">
-                    <a href="#${player.id !== hash ? "": ""}">Back to Home</a>
+                <a href="#${player.id !== hash ? "": ""}">Back to Home</a>
                 </div>
             </div>
+            
         `
     }
     info.innerHTML = infoHtml

@@ -11,10 +11,10 @@ h1 {
     padding: 2rem;
     text-align: center;
     border-radius: 2rem;
-    border: 2px ridge white;
+    border: 4px ridge white;
     color: #795CB2;
     font-size: 4rem;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px black;
 }
 
 .selected {
@@ -25,11 +25,12 @@ nav {
     background-color: #408EC6;
     display: flex;
     padding: 5px;
+    border: 2px white ridge;
 }
 
 nav a {
     padding: 6px;
-    border: 1px solid black;
+    border: 2px solid #795CB2;
 }
 
 .name {
@@ -46,9 +47,9 @@ nav a {
     height: 100vh;
     width: 100vh;
     background-size: cover;
-    color: white;
+    color: rgb(226, 225, 225);
     text-align:center;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px black;
 }
 
 #info {
@@ -58,6 +59,7 @@ nav a {
     background-color: #408EC6;
     font-size: 3rem;
     margin: 1rem;
+    border: 4px ridge white;
 }
 
 h2 {
@@ -76,6 +78,7 @@ ul {
     margin-top: 78%;
     background-color: #408EC6;
     border-radius: 2rem;
+    border: 3px ridge white;
 }
 
 @media (max-width: 500px) {

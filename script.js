@@ -1,5 +1,6 @@
 const playerList = document.querySelector("#playerList");
 const info = document.querySelector("#info");
+const returnHome = document.querySelector("#return");
 
 let playerNames;
 
@@ -41,15 +42,13 @@ function render(){
                     </ul>
                 </div>
                 <div id="home">
-                <a href="#${player.id !== hash ? "": ""}">Back to Home</a>
+                    <a href="#${player.id !== hash ? "": ""}">Back to Home</a>
                 </div>
             </div>
             
         `
     }
     info.innerHTML = infoHtml
-
-
 }
 
 window.addEventListener("hashchange", () => {

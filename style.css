@@ -47,7 +47,7 @@ nav a {
     height: 100vh;
     width: 100vh;
     background-size: cover;
-    color: rgb(226, 225, 225);
+    color: rgb(243, 230, 208);
     text-align:center;
     text-shadow: 2px 2px black;
     border: 5px ridge white;
@@ -60,7 +60,7 @@ nav a {
     background-color: #408EC6;
     font-size: 3rem;
     margin: 1rem;
-    border: 4px ridge white;
+    border: 4px ridge white
 }
 
 h2 {
@@ -73,6 +73,7 @@ ul {
     font-size: 2.5rem;
     line-height: 1;
     list-style: none;
+    font-weight: bold;
 }
 
 #home {

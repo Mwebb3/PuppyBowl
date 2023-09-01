@@ -50,6 +50,7 @@ nav a {
     color: rgb(226, 225, 225);
     text-align:center;
     text-shadow: 2px 2px black;
+    border: 5px ridge white;
 }
 
 #info {
@@ -75,10 +76,9 @@ ul {
 }
 
 #home {
-    margin-top: 78%;
-    background-color: #408EC6;
-    border-radius: 2rem;
+    margin-top: 78.5%;
     border: 3px ridge white;
+    background-color: #408EC6;
 }
 
 @media (max-width: 500px) {
